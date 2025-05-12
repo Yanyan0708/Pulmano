@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ian Portfolio</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav>
+
+    <div class ="nav-container">
+        <div class="logo"data-aos="zoom-in" data-aos-duration="1500">
+            <span>Ian</span>
+        </div>
+        <div class="links">
+            <div class ="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+            <div class ="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+            <div class ="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+            <div class ="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+            <div class ="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>             
+            </div>
+        </div>
+    </div>
+</nav>
+<section>
+    <div class="main-container">
+        <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+            <img src="ian.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                Hey I'm
+                <span>Ian</span>
+            </h1>
+            <div class="typewriter">
+                i'm a
+                <span class="typewriter-text"></span>
+                <label for="">|</label>
+              </div>
+              
+              <script>
+                const words = ["developer", "designer", "creator"];
+                let i = 0;
+                let j = 0;
+                let isDeleting = false;
+              
+                function type() {
+                  const span = document.querySelector(".typewriter-text");
+                  const word = words[i];
+              
+                  if (!isDeleting) {
+                    span.textContent = word.substring(0, j++);
+                    if (j > word.length) {
+                      isDeleting = true;
+                      setTimeout(type, 1000);
+                      return;
+                    }
+                  } else {
+                    span.textContent = word.substring(0, j--);
+                    if (j < 0) {
+                      isDeleting = false;
+                      i = (i + 1) % words.length;
+                    }
+                  }
+              
+                  setTimeout(type, isDeleting ? 100 : 150);
+                }
+              
+                type();
+              </script>
+              
+            <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1100">Hi, I’m Ian Gabriel R. Pulmano, and I’ve been a Developer for 10 years with a strong focus on Web Development. Throughout my career, I’ve honed my skills in front-end technologies like HTML, CSS, JavaScript, and React, while also gaining deep experience with back-end development using C# and Node.js. I specialize in building responsive, user-friendly websites and applications, always keeping performance and scalability in mind.
+
+              In addition to my web development expertise, I’m also passionate about Mobile App Development. I love creating intuitive mobile experiences with a focus on performance and seamless user interfaces. I have hands-on experience developing for both iOS and Android, and I’m particularly excited about cross-platform solutions, especially with Flutter.
+              
+              In my most recent role at Digital Solutions Agency (2021-2023), I had the opportunity to design and develop over 30 responsive websites for a variety of clients. One of my proudest achievements was optimizing page load speeds by 40% for several e-commerce sites, which led to improved SEO performance and a better user experience.
+              
+              I’m always looking to stay up to date with the latest technologies, particularly when it comes to front-end frameworks like React.js and Vue.js. I enjoy experimenting with new libraries and tools to find ways to enhance performance and create better user experiences. Accessibility is another area I’m passionate about, and I make sure to build websites that are inclusive and easy to use for everyone.
+              
+              What excites me about this opportunity is the chance to work with a company at the forefront of tech innovation. I thrive in creative, fast-paced environments where I can experiment with new technologies and challenge my skills. The prospect of collaborating with a talented team and learning from experienced professionals is something I really value, and I’m eager to contribute to projects that will have a meaningful impact.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/ian.pulmano.1" target="_blank" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1300">
+                  <i class="fa-brands fa-facebook"></i> 
+                </a>
+                <a href="https://www.instagram.com/pulmanoi/" target="_blank" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1300">
+                  <i class="fa-brands fa-instagram"></i> 
+                </a>
+                <a href="https://www.linkedin.com/in/ian-pulmano-a2a7a0333" target="_blank" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1300">
+                  <i class="fa-brands fa-linkedin"></i> 
+                </a>
+              </div>
+              
+            <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                <button>Hire me</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+        <dic class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+            <img src="1.png" alt=""/>
+            <img src="2.png" alt=""/>
+            <img src="3.png" alt=""/>
+            <img src="4.jpg" alt=""/>
+            <img src="5.png"/>
+        </div>
+        <div class="right">
+            <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+              Designing Is My Passion
+            </div>
+          
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+              Designing is my passion, and I am dedicated to creating visually stunning and user-centric experiences. Whether it's crafting seamless websites, designing engaging mobile apps, or developing captivating branding, my goal is to ensure every project not only looks great but also serves its purpose with functionality and impact. I believe that design is not just about aesthetics—it's about solving problems and enhancing experiences.
+          
+            <div class="button">
+              <a href="IAN GABRIEL-R.-PULMANO-RESUME.pdf" download="Ian_Resume.pdf">
+                <button type="button">Download CV</button>
+              </a>
+            </div>
+          </div>
+          
+          
+        </div>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                    Skills Reflects Our Knowledge
+                </div>
+                <p data-aos="fade-right">Hi, I’m Ian Gabriel R. Pulmano, an aspiring full-stack developer with hands-on experience in building modern web applications. I specialize in front-end development using HTML, CSS, and JavaScript to craft responsive and user-friendly interfaces. On the back-end, I work with C# to implement robust functionality and business logic. I'm passionate about creating efficient, visually engaging digital solutions and continuously learning new technologies to expand my capabilities.</p>
+                <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="num">10</div>
+                    <div class="exp">
+                        Years Of <br/>
+                        Experience
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic"data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" >HTML</div>
+                    <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">CSS</div>
+                    <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">JavaScript</div>
+                    <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">70%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-left" data-aos-duration="1200" data-aos-delay="450">C#</div>
+                    <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">60%</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class ="services" id ="services">
+    <div class="content"></div>
+    <div class="title"data-aos="fade-up" data-aos-duration="1200"><span>My Services</span></div>
+    <div class="boxes">
+        <div class="box"data-aos="fade-up"data-aos-duration="1500" data-aos-delay="200">
+            <div class="icon">
+                <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Web Development</div>
+            <p>I offer complete web development solutions that bring your ideas to life through clean design, solid functionality, and seamless user experience.
+
+              Front-End Development:
+              Responsive, mobile-friendly websites built with HTML, CSS, and JavaScript to ensure your site looks great on all devices.
+              
+              Back-End Development:
+              Secure and efficient back-end logic powered by C#, ideal for managing data, handling user authentication, and connecting APIs.
+              
+              E-Commerce Solutions:
+              Custom online stores with product listings, shopping carts, secure checkout systems, and inventory management features.
+              
+              Database Integration:
+              Real-time, scalable data handling with database integration to support dynamic content, user data, and analytics.</p>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">Graphic Design</div>
+            <p>I create visually compelling designs that enhance your brand and engage your audience across both digital and print platforms.
+
+              Logo & Branding:
+              Custom logo designs and cohesive branding elements that reflect your identity and make a lasting impression.
+              
+              Social Media Graphics:
+              Eye-catching visuals optimized for platforms like Facebook, Instagram, and Twitter to boost your online presence.
+              
+              Marketing Materials:
+              Professionally designed posters, flyers, brochures, and business cards tailored to your goals and audience.
+              
+              Web & UI Design:
+              Modern, user-focused layouts for websites and applications, ensuring both aesthetic appeal and functional clarity.</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">Digital Marketing</div>
+            <p>I help brands grow and connect with their audience through strategic digital marketing solutions that drive real results.
+
+              Social Media Management:
+              Consistent, engaging content tailored for platforms like Facebook, Instagram, and TikTok to grow your audience and boost interaction.
+              
+              Search Engine Optimization (SEO):
+              On-page and technical SEO strategies to improve website visibility, increase organic traffic, and rank higher on search engines.
+              
+              Content Creation:
+              High-quality visuals, captions, and multimedia content crafted to align with your brand voice and digital goals.
+              
+              Email Marketing Campaigns:
+              Professionally designed and targeted email campaigns that nurture leads and build strong customer relationships.</p>
+        </div>
+        <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+            <div class="icon">
+                <i class="fab fa-android"></i>
+            </div>
+            <div class="topic">Icon Design</div>
+            <p>I craft custom icons that enhance usability, communicate ideas clearly, and bring visual consistency to your digital products.
+
+              Custom Icon Sets:
+              Unique, pixel-perfect icons tailored to match your brand identity and user interface.
+              
+              UI/UX Icon Design:
+              Intuitive and clean icons designed for websites, mobile apps, and software interfaces to improve navigation and user experience.
+              
+              Themed Icon Packs:
+              Consistent icon styles for dashboards, toolkits, or product categories—perfect for maintaining a polished, professional look.
+              
+              SVG & Vector Delivery:
+              Scalable, lightweight icons delivered in web- and app-ready formats, including SVG, PNG, and AI.</p>
+    </div>
+    <div class="box" data-aos="fade-up"data-aos-duration="1500" data-aos-delay="1000">
+        <div class="icon">
+            <i class="fas fa-camera-retro"></i>
+        </div>
+        <div class="topic">Photography</div>
+        <p>I offer professional photography services that capture the essence of your brand and tell your unique story through stunning, high-quality visuals.
+
+          Product Photography:
+          Showcase your products in the best light with clear, detailed shots that highlight features and appeal to your target market.
+          
+          Brand Photography:
+          Custom photos that reflect your brand's identity, whether for marketing campaigns, websites, or social media.
+          
+          Event Photography:
+          Capture the moments that matter, from corporate events to personal milestones, with attention to detail and creativity.
+          
+          Portrait Photography:
+          High-quality, professional portraits for team members, clients, or personal branding, ensuring your photos communicate confidence and professionalism.</p>
+        </div>
+        <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+            <div class="icon">
+                <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic">Apps Development</div>
+            <p>I design and develop intuitive, high-performance mobile applications that enhance user experiences and drive business growth.
+
+              Custom Mobile Apps:
+              Tailored apps for iOS and Android, built to meet your business needs with seamless functionality and attractive design.
+              
+              Cross-Platform Development:
+              Apps that work smoothly on both iOS and Android, ensuring maximum reach and a unified user experience.
+              
+              UI/UX Design:
+              User-centered designs focused on making your app simple to navigate while providing an engaging and aesthetically pleasing experience.
+              
+              App Optimization & Maintenance:
+              Continuous support to ensure your app runs smoothly, stays updated, and adapts to new platform requirements.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+            <span>Contact Me</span>
+        </div>
+        <div class="text">
+            <div class="topic"data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have any Project</div>
+            <p>Project topic</p>
+<div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+    <button onclick="showForm()">Let's Chat</button>
+  </div>
+  
+  
+  <form class="form-container" id="chatForm" data-aos="fade-up" action="https://formspree.io/f/xyzwweze" method="POST">
+    <h3>Enter Your Details</h3>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  
+
+  <script>
+    AOS.init();
+    function showForm() {
+      document.getElementById('chatForm').style.display = 'block';
+    }
+  </script>
+  
+  <style>
+    .button button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+  
+    .button button:hover {
+      background-color: #0056b3;
+    }
+  
+    .form-container {
+      display: none;
+      margin-top: 30px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9;
+      text-align: center; /* Center text and button */
+    }
+  
+    .form-container h3 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      text-align: left;
+    }
+  
+    .form-container button {
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  
+  
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="text">
+        <span>Created By <a href="#">Ian Gabriel R. Pulmano</a>|&#169;2025 All Rights Reserved</span>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset:0});
+</script>
+
+</body>
+</html>
